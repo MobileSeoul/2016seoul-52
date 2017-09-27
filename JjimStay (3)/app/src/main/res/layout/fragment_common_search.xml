@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/SearchFragmentPadding"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_marginTop="30dp"
+    android:background="@color/custom_search_bg"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/query_edit_text"
+        style="@style/SearchFragmentPadding"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:hint="@string/search_hint"
+        android:maxLength="30"
+        android:maxLines="1" />
+
+    <ImageButton
+        android:id="@+id/common_search_button"
+        android:layout_marginTop="35dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/search_button_image"
+        android:scaleType="centerInside"
+        android:src="@drawable/search_button_image" />
+
+    <!--<android.support.v4.view.ViewPager-->
+    <!--android:id="@+id/search_result"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_below="@id/search_button"/>-->
+
+</RelativeLayout>

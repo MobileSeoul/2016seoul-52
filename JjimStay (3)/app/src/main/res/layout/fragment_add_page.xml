@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#e9e9e9"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#FFFFFF">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/detailImageViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <CheckBox
+                    android:id="@+id/favoriteCheckBox"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="13dp"
+                    android:background="@drawable/favorite_selector"
+                    android:button="@null" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@drawable/info_fragment_item_bg"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/details_name_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="10dp"
+                    android:text="spa name"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/details_divider"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/details_name_textView"
+                    android:background="@color/gray"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp" />
+
+                <ImageButton
+                    android:id="@+id/callImageButton"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_above="@+id/details_divider"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:src="@android:drawable/ic_menu_call" />
+
+                <TextView
+                    android:id="@+id/details_rating_textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_divider"
+                    android:gravity="center"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="5dp"
+                    android:text="0.0"
+                    android:textAlignment="center"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <com.iarcuschin.simpleratingbar.SimpleRatingBar
+                    android:id="@+id/rating_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/details_divider"
+                    android:layout_toRightOf="@+id/details_rating_textView"
+                    android:isIndicator="false"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="5dp"
+                    app:srb_borderColor="@color/app_theme_color"
+                    app:srb_fillColor="@color/app_theme_color"
+                    app:srb_numberOfStars="5"
+                    app:srb_rating="3.5"
+                    app:srb_stepSize="0.5" />
+
+                <TextView
+                    android:id="@+id/address_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/rating_bar"
+                    android:padding="5dp"
+                    android:text="| 주소 및 연락처"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address_phone_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/address_title"
+                    android:padding="5dp"
+                    android:text=" - "
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <TextView
+                    android:id="@+id/details_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/address_phone_detail"
+                    android:padding="5dp"
+                    android:text="| 세부사항"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/details_textview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_title"
+                    android:padding="5dp"
+                    android:paddingBottom="10dp"
+                    android:text=" - " />
+
+                <TextView
+                    android:id="@+id/facility_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/details_textview"
+                    android:padding="5dp"
+                    android:text="| 부대시설"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/facility_title"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/facility_fitness_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/fitness_selector"
+                        android:padding="5dp" />
+
+                    <!--separator-->
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/facility_beauty_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/beauty_selector"
+                        android:padding="5dp" />
+
+                    <!--separator-->
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/facility_PC_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/pc_selector"
+                        android:padding="5dp" />
+
+                    <!--separator-->
+                    <View
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/gray" />
+
+                    <ImageView
+                        android:id="@+id/facility_arcade_imageview"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/arcade_selector"
+                        android:padding="5dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/map_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

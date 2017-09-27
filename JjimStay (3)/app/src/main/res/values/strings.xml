@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">찜스테이</string>
+    <string name="kakao_app_key">760498f1d80dfd8675bf31aec47242ab</string>
+    <string name="daum_app_key">392d742af431238a62dfbbc4acb9ad4e</string>
+
+    <!--side bar-->
+    <string name="welcome">Welcome, </string>
+    <string name="favorite">Favorite</string>
+    <string name="coupon">Coupon</string>
+    <string name="phone_number">1588-7777</string>
+
+
+    <!--my page-->
+    <string name="notice">공지사항</string>
+
+    <string name="email">e-mail</string>
+    <string name="password">password</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="common_search">일반 검색</string>
+    <string name="custom_search">상세 검색</string>
+    <string name="search">Search</string>
+
+    <!--<string name="back_key_message">Please click BACK again to exit</string>-->
+    <string name="back_key_message">종료하시려면 BACK 키를 한번더 눌러주세요. </string>
+
+    <!-- Common Search / Editview's text -->
+    <string name="search_hint">Search (ex.Dragon Hill Spa ...)</string>
+
+    <!-- Custom Search / Textview's text -->
+    <string name="schedule_capital">SCHEDULE</string>
+    <string name="location_capital">LOCATION</string>
+    <string name="facility_capital">FACILITY</string>
+    <string name="price_capital">PRICE</string>
+
+    <!-- Custom Search / Facility -->
+    <string name="fitness">fitness</string>
+    <string name="beauty">beauty</string>
+    <string name="PC">PC</string>
+    <string name="arcade">arcade</string>
+
+    <!--infofragment-->
+    <string name="review">review</string>
+    <string name="details">details</string>
+    <string name="share">share</string>
+    <string name="favorite_kor">위시리스트</string>
+    <!--URLs-->
+    <string name="GPSSearchURL">http://jjimstay2-ohsungkim.cloud.or.kr/api/coordinate/</string>
+    <string name="ImageBaseURL">http://jjimstay2-ohsungkim.cloud.or.kr/images/</string>
+    <string name="SpaIDSearchURL">http://jjimstay2-ohsungkim.cloud.or.kr/api/spaidsearch/</string>
+    <string name="CommonSearchURL">http://jjimstay2-ohsungkim.cloud.or.kr/api/search/</string>
+    <string name="CustomSearchURL">http://jjimstay2-ohsungkim.cloud.or.kr/api/customsearch/</string>
+
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="7dp"
+        android:paddingTop="7dp">
+
+        <Button
+            android:id="@+id/searchNormal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2dp"
+            android:background="#ffFCB315"
+            android:text="일반검색"
+            android:textColor="#ffffffff" />
+
+        <Button
+            android:id="@+id/searchDetail"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffffff"
+            android:layout_marginLeft="2dp"
+            android:background="#ffFCB315"
+            android:text="상세검색" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/searchPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+</LinearLayout>
